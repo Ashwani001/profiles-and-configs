@@ -1,0 +1,9 @@
+bashrc sourced by placing following line at end of ~/.bashrc file
+    . ~/dev/profiles-and-configs/bashrc
+vimrc source by placing following code in ~/.vimrc file (credit https://superuser.com/a/369823)
+    try 
+      source ~/dev/profiles-and-configs/vimrc
+    catch
+      "No such file? No problem; just ignore it.
+    endtry 
+
