@@ -3,7 +3,7 @@ alias ls='ls -lthr --color'
 alias lse='ls | grep'
 alias pyup='myip; python -m SimpleHTTPServer 8008;'
 #nmap -sn 192.168.1.0/24
-
+alias rzoom="kill $(ps -eaf | grep /opt/zoom/zoom | grep -vE 'grep|home' | awk '{ print $2 }') ; /usr/bin/zoom &"
 myip()
 {
 	ip=$(ifconfig | grep inet | grep -E 'broad|Bcast' | awk '{print $2}' | sed 's/.*://' | tail -1 )
